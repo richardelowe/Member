@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="/T1578550319203Converted/JsonSchema" xmlns:tns="/T1578550319203Converted/JsonSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Member" type="tns:Member"/>
+    <xs:complexType name="Member">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="id" type="xs:string"/>
+            <xs:element minOccurs="0" name="firstName" type="xs:string"/>
+            <xs:element minOccurs="0" name="lastName" type="xs:string"/>
+            <xs:element minOccurs="0" name="dateJoined" type="xs:date"/>
+            <xs:element minOccurs="0" name="coverLevel" type="xs:string"/>
+            <xs:element minOccurs="0" name="lifetimeLoading" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

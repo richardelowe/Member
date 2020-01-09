@@ -1,0 +1,78 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "Member",
+    "x-lastModified": "11 December 2019 1:07:16 pm (Australian Eastern Daylight Time)"
+  },
+  "paths": {
+    "/member/{id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/Member"
+            },
+            "examples": {
+              "application/json": {
+                "id": "1234123",
+                "firstName": "Matty",
+                "lastName": "Bank",
+                "dateJoined": "2012-10-10",
+                "coverLevel": "GOLD",
+                "lifetimeLoading": 2
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": ""
+          }
+        ],
+        "operationId": "getMember_id"
+      }
+    }
+  },
+  "definitions": {
+    "Member": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "default": "1234123"
+        },
+        "firstName": {
+          "type": "string",
+          "default": "Matty"
+        },
+        "lastName": {
+          "type": "string",
+          "default": "Bank"
+        },
+        "dateJoined": {
+          "type": "string",
+          "format": "date",
+          "default": "2012-10-10"
+        },
+        "coverLevel": {
+          "type": "string",
+          "default": "GOLD"
+        },
+        "lifetimeLoading": {
+          "type": "integer",
+          "default": 2
+        }
+      }
+    }
+  }
+}
