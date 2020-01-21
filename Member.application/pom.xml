@@ -12,8 +12,8 @@
   <packaging>bwear</packaging>
   <properties>
     <skipTests>false</skipTests>
-    <bw.Home>/bw/2.5</bw.Home>
     <project.type>None</project.type>
+    <bw.Home>/bw/2.5</bw.Home>
     <failIfNoTests>false</failIfNoTests>
     <tibco.Home>/opt/tibco/bwce250</tibco.Home>
   </properties>
