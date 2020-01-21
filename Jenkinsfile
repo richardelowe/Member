@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps { 
-                sh "mvn clean initialize package -f *.application.parent"
+                sh "mvn clean initialize package -f *.application.parent/pom.xml"
             }
         }
     }
